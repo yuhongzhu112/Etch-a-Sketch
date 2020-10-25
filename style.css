@@ -1,0 +1,87 @@
+body {
+    background-color: #5CDB95;
+    color: #EDF5E1;
+    font-size: 19px;
+    font-family: 'Turret Road', cursive;
+}
+
+#content {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 30px;
+    border: 4px dashed #05386B;
+}
+
+#grid {
+    width: 70%;
+    padding: 30px;
+}
+
+#buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    display: block;
+    width: 70%;
+    min-width: 30px;
+    margin: 10px 0;
+    padding: 3vw 0;
+    font-family: 'Turret Road', cursive;
+    font-size: 22px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #EDF5E1;
+    color: #05386B;
+    font-weight: bold;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button:active {
+    background-color: #05386B;
+    color: #EDF5E1;
+}
+
+#intro {
+    margin: 30px;
+    border: 4px dashed #05386B;
+    text-align: center;
+}
+
+#container {
+    width: 60vw;
+    height: 60vw;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    margin: auto;
+    border: 1px solid #379683;
+}
+
+.border-g {
+    border: 1px solid #379683;
+}
+
+@media (max-width: 800px) {
+    #content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #grid {
+        width: 70%;
+        padding: 30px;
+    }
+
+    #buttons {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
